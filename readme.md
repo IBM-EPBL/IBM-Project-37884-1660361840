@@ -1,11 +1,11 @@
 <br>
 <div align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"  align="center" alt="drawing" width="200" />
-  <h2 align="center">Handwritten Digit Recognition System<br></h2>
+  <h2 align="center">Handwritten Digit Recognition System<br></h2><h3>IBM-Project-9130-1658982501</h3><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png">
 
   </div>
  <br> 
- <h3>IBM-Project-9130-1658982501</h3>  
+   
     
     
   
@@ -19,6 +19,8 @@
   </i>
   </ul>
 <br>
+
+
 <h2>📃 Abstract:</h2><i>
 <ul>
 <li>Students are often worried about their chances of admission to University. </li>
