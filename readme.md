@@ -23,10 +23,10 @@
 
 <h2>📃 Abstract:</h2><i>
 <ul>
-<li>Students are often worried about their chances of admission to University. </li>
-<li>The aim of this project is to help students in shortlisting universities with their profiles. </li>
-<li>The predicted output gives them a fair idea about their admission chances to a particular university. </li>
-<li>This analysis should also help students who are currently preparing or will be preparing to get a better idea. </li>
+<li>Handwritten Digit recognition has been a widely renowned problem in the field of Computer Vision</li>
+<li>The aim of this project is to detect and recognize and detect handwritten digits</li>
+<li>The predicted output would help to recognize and aid people in need. </li>
+<li>This analysis should also help people with disabilities. </li>
   </i>
   </ul>
 <br>
