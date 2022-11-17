@@ -1,7 +1,7 @@
 <br>
 <div align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"  align="center" alt="drawing" width="200" />
-  <h2 align="center">Handwritten Digit Recognition System<br></h2><h3>IBM-Project-37884-1660361840</h3><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png">
+  <h2 align="center">A Novel Method for Handwritten Digit Recognition System<br></h2><h3>IBM-Project-37884-1660361840</h3><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png">
 
   </div>
  <br> 
