@@ -1,5 +1,5 @@
 from __future__ import print_function
-import keras
+import tensorflow as tf
 from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
@@ -35,23 +35,27 @@ print(x_train.shape[0], 'train samples')
 print(x_test.shape[0], 'test samples')
 
 # convert class vectors to binary class matrices
-y_train = keras.utils.to_categorical(y_train, num_classes)
-y_test = keras.utils.to_categorical(y_test, num_classes)
+y_train = tf.keras.utils.to_categorical(y_train, num_classes)
+y_test = tf.keras.utils.to_categorical(y_test, num_classes)
 
 model = Sequential()
-model.add(Conv2D(32, kernel_size=(3, 3),
-                 activation='relu',
-                 input_shape=input_shape))
-model.add(Conv2D(64, (3, 3), activation='relu'))
-model.add(MaxPooling2D(pool_size=(2, 2)))
-model.add(Dropout(0.25))
+
+#First Layer
+model.add(Conv2D(6, (5, 5), padding='same', activation='relu',strides=(1, 1), input_shape=((28,28,1))))
+model.add(MaxPooling2D(pool_size=(2, 2), strides=2))
+#Second Layer
+model.add(Conv2D(16, (5, 5), padding='valid',strides=(1, 1), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2), strides=2))
 model.add(Flatten())
-model.add(Dense(128, activation='relu'))
-model.add(Dropout(0.5))
+#Forth Layer
+model.add(Dense(120, activation='relu'))
+#Fifth Layer
+model.add(Dense(84, activation='relu'))
+#Output Layer
 model.add(Dense(num_classes, activation='softmax'))
 
-model.compile(loss=keras.losses.categorical_crossentropy,
-              optimizer=keras.optimizers.Adadelta(),
+model.compile(loss=tf.keras.losses.categorical_crossentropy,
+              optimizer=tf.keras.optimizers.Adadelta(),
               metrics=['accuracy'])
 
 model.fit(x_train, y_train,

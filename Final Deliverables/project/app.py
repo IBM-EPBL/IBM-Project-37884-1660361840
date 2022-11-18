@@ -17,6 +17,10 @@ model, graph = init()
     
 @app.route('/')
 def index():
+    return render_template("home.html")
+
+@app.route('/user')
+def user():
     return render_template("index.html")
 
 @app.route('/predict/', methods=['GET','POST'])
